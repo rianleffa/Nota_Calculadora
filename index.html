@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cálculo de Notas</title>
+</head>
+<body>
+  <h1>Cálculo de Notas</h1>
+  <h2>Análise e Desenvolvimento de sistemas</h2>
+  
+
+  <label for="ap1">AP1:</label>
+  <input type="number" id="ap1" min="0" max="1.5" step="0.1" onblur="validarNota(this)">
+
+  <label for="ap2">AP2:</label>
+  <input type="number" id="ap2" min="0" max="2.5" step="0.1" onblur="validarNota(this)">
+
+  <label for="as">AS:</label>
+  <input type="number" id="as" min="0" max="6" step="0.1" onblur="validarNota(this)">
+
+  <button onclick="calcularNotaFinal()">Calcular Nota Final</button>
+
+  <p id="resultado"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
